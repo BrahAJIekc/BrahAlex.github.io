@@ -1,0 +1,95 @@
+@charset "utf-8";
+@font-face {
+    font-family: Bloody; /* Гарнитура шрифта */
+    src: url('../Fonts/bloody.ttf') format('truetype'); /* Путь к файлу со шрифтом */
+   }
+body{
+    background: dimgrey;
+    font-family:Bloody;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    animation-name: bgcolor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgcolor {
+    0%   {background-color:dimgrey; }
+    50%  {background-color:darkgray; }
+    100%  {background-color:dimgrey; } 
+}
+#header{
+    background: burlywood;
+    font-family: Bloody;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    text-shadow: black;
+    opacity: 0.5;
+}
+#buttonClick{
+    width: 500px;
+    height: 100px;
+    background: burlywood;
+    font-family: Bloody;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 5;
+    border-radius: 10px; 
+}
+#button1{
+    font-family: Bloody;
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 5;
+    font-size: 50px;
+    border-radius: 10px;
+}
+#button1:hover{
+  background-color: black;
+  color: crimson;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+#menu{
+    background: darkgrey;
+     display: block;
+     margin-left: 30%;
+     margin-right: 30%;
+     margin-bottom: 10px;
+     padding: 5px;
+     text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    box-shadow:  0 1px 0 rgba(255,255,255,.5), 0 2px 1px rgba(0,0,0,.3) inset; 
+}
+li  {
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+color: crimson;
+}
+span {
+    display: inline;
+}
+.menuitems:hover{
+color: white;
+}
